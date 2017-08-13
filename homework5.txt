@@ -1,0 +1,57 @@
+1. momsChecking.withdraw(500.00) doesn't return anything, but System.out.println needs an argument.
+2. a. it adds two more instance variables: name and number
+	private String name;
+	private int number;
+b. 	making them make the name the name the person wants and the number the number the person wants, and having a default name or number.
+	public BankAccount(String ownerName, int accountNumber)
+	{
+		name = ownerName;
+		number = accountNumber;
+		balance = 0;
+	}
+	public BankAccount(String ownerName, int accountNumber, double initialBalance)
+	{
+		balance = initialBalance;
+		name = ownerName;
+		number = accountNumber;
+	}
+		public BankAccount()
+	{
+		name = "Epicawesomemartiansuperhero";
+		number = 999999;
+		balance = 0;
+	}
+	public BankAccount(double initialBalance)
+	{
+		balance = initialBalance;
+		name = "Epicawesomemartiansuperhero";
+		number = 999999;
+	}
+
+c. 
+public int getNumber()
+{
+	return number;
+}
+public String getName()
+{
+	return name;
+}
+public void setNumber(int accountNumber)
+{
+	number = accountNumber;
+}
+public void setName(String accountName)
+{
+	name = accountName;
+}
+3. 
+dadsChecking.withdraw(dadsChecking.checkBalance());
+4.a. 
+BankAccount myAccount = new BankAccount();
+myAccount.deposit(amountIWantToStartWith);
+b. yes
+BankAccount myAccount = new BankAccount(0);
+5.a. 3 objects of the BankAccount type, 0 objects of the BankTester type
+b. $0, $0, $1000 no
+c. no, because they are different objects.

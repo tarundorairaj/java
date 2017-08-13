@@ -1,0 +1,16 @@
+1. String allHi = "hi all";
+System.out.println(allHi.replace("h", "H").replace("a", "A");
+2.a. 10
+b. "WORLD", "Dave"
+argument type: string
+c. "HELLO WORLD"
+d. no, it is a method of the Prinstream class, not String
+different classes have different responsibility, Prinstream class prints stuff to the console and String class manipulates strings.
+3. public String toUppercase()
+4.a.  public int indexOf(String thingyouaretryingtofindtheindexof)
+ b. System.out.println(country.indexOf("America"));
+ c. public String substring(int beginIndex, int endIndex)
+ d. country.substring(17, 24);
+ e. country.substring(country.indexOf("A"), country.length());
+ f. country.substring(country.indexOf("U"), country.indexOf(" of"));
+ g. country.substring(country.indexOf("U"), country.indexOf(" of")).toUpperCase();

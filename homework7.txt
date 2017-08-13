@@ -1,0 +1,64 @@
+1. 	public void transfer(double amount, BankAccount otherAccount)
+	{
+		this.withdraw(amount);
+		otherAccount.deposit(amount);
+		return this.checkBalance();
+	}
+2. a. 1 implicit, 1 explicit
+explicit: amount, a double
+implicit: this, a BankAccount
+b. it has no meaning. amount is not an instance variable of BankAccount. it is an explicit parameter.
+c. explicit: args, a String[]
+implicit, a WhateverTheNameOfTheClassIs object
+3. a. niether, it returns the explicit parameter.
+b. no
+public class BankAccount
+{
+    private String accountName;
+
+    public String mystery (String accountName)
+    {
+        return this.accountName;
+    }
+}
+c. no. it just returns the parameter you give it.
+4. 
+public class Types {
+	public String identify(long a)
+	{
+		return "Long";
+	}
+	public String identify(short a)
+	{
+		return "Short";
+	}
+	public String identify(boolean a)
+	{
+		return "Boolean";
+	}
+	public String identify(byte a)
+	{
+		return "Byte";
+	}
+	public String identify(String a)
+	{
+		return "String";
+	}
+	public String identify(int a)
+	{
+		return "Integer";
+	}
+	public String identify(float a)
+	{
+		return "Float";
+	}
+	public String identify(double a)
+	{
+		return "Double";
+	}
+	public String identify(char a)
+	{
+		return "Character";
+	}
+}
+6. one: side length

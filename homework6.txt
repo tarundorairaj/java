@@ -1,0 +1,156 @@
+1.a.
+ 	private int state;
+	private int channel;
+	private int volume;
+b.
+	public Tv()
+	{
+		channel = 1;
+		state = 1;
+		volume = 100000;
+	}
+	
+	public Tv(int initialChannel, int initialState, int initialVolume)
+	{
+		channel = initialChannel;
+		state = initialState;
+		volume = initialVolume;
+	}
+c. 
+	public void changeChannel(int channelNumber)
+	{
+		channel = channelNumber;
+	}
+	
+	public void changeVolume(int volumeLevel)
+	{
+		volume = volumeLevel;
+	}
+	
+	public int getChannel()
+	{
+		return channel;
+	}
+	public int getState()
+	{
+		return state;
+	}
+	public int getVolume()
+	{
+		return volume;
+	}
+	
+	public void turnOff()
+	{
+		state = 0;
+	}
+	
+	public void turnOn()
+	{
+		state = 1;
+	}
+d. Setters: turnOff, turnOn, changeVolume, changeChannel
+getters: getChannel, getState, getVolume
+e. 
+public class TvTester {
+	public static void main(String[] args) {
+		Tv myTv = new Tv(1000, 1, 999999);
+		System.out.println(myTv.getState());
+		System.out.println(myTv.getVolume());
+		System.out.println(myTv.getChannel());
+		myTv.changeChannel(100);
+		myTv.changeVolume(1);
+		myTv.turnOff();
+		System.out.println(myTv.getState());
+		System.out.println(myTv.getVolume());
+		System.out.println(myTv.getChannel());
+		myTv.turnOn();
+		System.out.println(myTv.getState());
+		System.out.println(myTv.getVolume());
+		System.out.println(myTv.getChannel());
+		Tv otherTv = new Tv();
+		System.out.println(otherTv.getState());
+		System.out.println(otherTv.getVolume());
+		System.out.println(otherTv.getChannel());
+		
+	}
+}
+2. 
+	public double total(BankAccount otherAccount)
+	{
+		return balance + otherAccount.checkBalance();
+	}
+3.a. 
+	public Product(String wantedName, double initialPrice)
+	{
+		name = wantedName;
+		price = initialPrice;
+		quantity = 0;
+	}
+	
+	public Product(String wantedName, double initialPrice, int wantedQuantity)
+	{
+		name = wantedName;
+		price = initialPrice;
+		quantity = wantedQuantity;
+	}
+b. 
+	public String getName()
+	{
+		return name;
+	}
+	public double getPrice()
+	{
+		return price;
+	}
+	public int getQuantity()
+	{
+		return quantity;
+	}
+	
+	public void reducePrice(double amount)
+	{
+		price = price - price * amount;
+	}
+	
+	public double totalCost()
+	{
+		return price * quantity;
+	}
+c. getters: getName, getPrice, getQuantity, totalCost
+setters: reducePrice
+d. 
+public class ProductPrinter {
+	public static void main(String[] args) {
+		Product mansion = new Product("mansion", 0.01, 100);
+		Product privateJet = new Product("private jet", 0.01, 1000);
+		System.out.println(mansion.getName());
+		System.out.println(mansion.getPrice());
+		System.out.println(mansion.getQuantity());
+		System.out.println(privateJet.getName());
+		System.out.println(privateJet.getPrice());
+		System.out.println(privateJet.getQuantity());
+		mansion.reducePrice(0.25);
+		privateJet.reducePrice(0.25);
+		System.out.println(mansion.getName());
+		System.out.println(mansion.getPrice());
+		System.out.println(mansion.getQuantity());
+		System.out.println(privateJet.getName());
+		System.out.println(privateJet.getPrice());
+		System.out.println(privateJet.getQuantity());
+		System.out.println(mansion.totalCost());
+		System.out.println(privateJet.totalCost());
+		
+		}
+}
+4.a. line 4: width hasn't been assigned anything.
+line 5: width is already declared.
+line 6: the name can't have "-" in it.
+line 7: height isn't declared.
+line 8: class cannot be the name of a variable.
+line 9: 51c is not an int.
+line 10: / can't be in a name, and 42.2 is not an int.
+line 12: a name can't begin with a number.
+line 13: "27" is not an int.
+b. no, "=" is used for assigning values to variables.
+this can't be an assignment statement because a variable name can't start with a number.

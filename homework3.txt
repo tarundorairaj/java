@@ -1,0 +1,2 @@
+1. The java compiler translates the code for the jvm instead of the cpu. This makes it so that one doesn't have to make different versions of the same program for different platforms.
+2. c.  BankAccount.class

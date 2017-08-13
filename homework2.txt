@@ -1,0 +1,35 @@
+1. person
+	properties: height, weight, kindness, generosity, speed, intelligence, age, happiness, trustworthiness, strength
+	actions: walk, run, jump, skip, sit, lie down, play video games, eat, watch tv, kick
+2. classes
+3.	a. "hello" should be capitalized.
+	"main" should be lowercase
+	"Hello" should be in quotes
+	that line must end in ";"
+	"system" should be capitalized
+b. 
+public class Hello
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Hello");
+	}
+}
+4. 
+public class Hello
+{
+	public static void main(String[] args)
+	{
+		System.out.println("H");
+		System.out.println("e");
+		System.out.println("l");
+		System.out.println("l");
+		System.out.println("o");
+	}
+}
+5. 
+	a. BankAccount.java
+	b. javac BankAccount.java
+	c. BankAccount
+	d. java BankAccount
+	e. public class BankAccount
